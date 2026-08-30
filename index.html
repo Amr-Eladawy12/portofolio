@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Amr Hatem Eladawy | Junior Network Security Engineer & SOC Analyst</title>
+  <meta name="description" content="Portfolio of Amr Hatem Eladawy - Junior Network Security Engineer & SOC Analyst specializing in defensive engineering, multi-vendor network simulation, and Python automation." />
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Cyber Background Layers -->
+  <div class="cyber-bg-overlay"></div>
+  <div class="cyber-grid-pattern"></div>
+  <canvas id="network-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">AMR.ELADAWY</span>
+        <span class="logo-dot">_</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="status-indicator" title="SOC Security System Active"></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-terminal"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-shield"></i> About</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-users-gear"></i> Experience</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+          <li><a href="#project" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+          <li><a href="#testimonials" class="nav-link"><i class="fa-solid fa-comments"></i> Testimonials</a></li>
+          <li><a href="#service" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Services</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-satellite-dish"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CV Button far right of navbar -->
+      <a href="assets/Amr Hatem Eladawy -CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cv-btn">
+        <i class="fa-solid fa-file-lines"></i> View CV
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= 1. HOME SECTION ================= -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="terminal-badge">
+            <span class="pulse-dot"></span>
+            <span class="terminal-badge-text">STATUS: DEFENSIVE ENGINE ONLINE // 250+ LAB HOURS</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="greeting-sub">Hi, I'm Amr Hatem Eladawy</span> <br/>
+            <span class="text-gradient-cyan">Junior Network Security</span> &amp; <br/>
+            <span class="text-gradient-emerald">SOC Analyst</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Computer Science student specializing in 
+            <strong>Network Security, 
+            SOC Analysis, and Python Network Scripting
+            </strong>
+            . Experienced in multi-vendor simulations (GNS3, 
+            Cisco Packet Tracer, Huawei eNSP), enterprise firewall hardening, and building high-speed packet automation pipelines.
+          </p>
+
+
+          <div class="hero-quick-stats">
+            <div class="stat-item">
+              <span class="stat-number">250+</span>
+              <span class="stat-label">Accredited Lab Hours (Huawei, NTI, DEPI)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10k+</span>
+              <span class="stat-label">Frames Dissected (Scapy)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">40+</span>
+              <span class="stat-label">Hardened ACLs &amp; IPsec Tunnels</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean, Minimalist & Elegant Photo Frame -->
+        <div class="hero-visual">
+          <div class="hero-simple-photo-wrapper">
+            <img src="assets/profile.jpg" alt="Amr Hatem Eladawy" class="hero-simple-photo" onerror="this.src='assets/profile photo.jpg'" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. ABOUT SECTION ================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-fingerprint"></i> PROFILE SUMMARY</span>
+          <h2 class="section-title">About <span class="text-gradient-cyan">Me</span></h2>
+          <p class="section-desc">Detail-oriented Computer Science student specialized in Network Security, Defensive Engineering, and Infrastructure Hardening.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel main-summary">
+            <div class="card-icon-header">
+              <div class="icon-box cyan-glow">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <div>
+                <h3>Defensive Engineering &amp; Threat Detection</h3>
+                <span class="card-subtitle">Junior Network Security Engineer | SOC Analyst</span>
+              </div>
+            </div>
+            <p class="about-text">
+              I am a detail-oriented Computer Science student with a passionate drive for <strong>Network Security, Defensive Engineering, and Infrastructure Hardening</strong>. Backed by <strong>250+ hours</strong> of accredited technical training across <strong>Huawei, NTI (National Telecommunication Institute), and DEPI (Digital Egypt Pioneers Initiative)</strong>, I specialize in simulating multi-vendor enterprise networks (GNS3, Cisco Packet Tracer, Huawei eNSP) and establishing rock-solid firewall policies.
+            </p>
+            <p class="about-text">
+              I develop high-performance Python security automation utilities (Scapy, Sockets, Multithreading) to inspect network packets and accelerate audit turnaround by 65%. A strong communicator skilled in technical documentation, structured incident reporting, and cross-functional team leadership, I am seeking to leverage my hands-on lab experience and analytical rigor as an entry-level Network Security Engineer.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-pill"><i class="fa-solid fa-certificate"></i> 250+ Accredited Training Hours</div>
+              <div class="highlight-pill"><i class="fa-solid fa-network-wired"></i> Multi-Vendor Enterprise Topologies</div>
+              <div class="highlight-pill"><i class="fa-brands fa-python"></i> Python Scapy &amp; Socket Automation</div>
+              <div class="highlight-pill"><i class="fa-solid fa-shield-virus"></i> FortiSIEM &amp; FortiAnalyzer Practical Labs</div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="about-card glass-panel stats-card">
+              <div class="info-row">
+                <span class="info-key"><i class="fa-solid fa-crosshairs"></i> Target Role:</span>
+                <span class="info-val text-gradient-cyan">Junior Network Security Engineer / SOC</span>
+              </div>
+              <div class="info-row">
+                <span class="info-key"><i class="fa-solid fa-location-dot"></i> Base Location:</span>
+                <span class="info-val">Mansoura, Egypt</span>
+              </div>
+              <div class="info-row">
+                <span class="info-key"><i class="fa-solid fa-language"></i> Language Fluency:</span>
+                <span class="info-val">Arabic (Native), English (B2 Fluent)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-key"><i class="fa-solid fa-circle-check"></i> Status:</span>
+                <span class="info-val text-emerald">Available for Full-time Roles &amp; Security Labs</span>
+              </div>
+            </div>
+
+            <div class="about-card glass-panel quote-card">
+              <div class="quote-symbol">“</div>
+              <p class="quote-content">
+                Security is built on deep visibility, sub-second failover design, stateful perimeter policies, and automated packet telemetry.
+              </p>
+              <div class="quote-author">— Defensive Engineering Philosophy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. EDUCATION SECTION ================= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> ACADEMIC &amp; CREDENTIALS</span>
+          <h2 class="section-title">Education &amp; <span class="text-gradient-cyan">Certifications</span></h2>
+          <p class="section-desc">Academic excellence coupled with 250+ hours of accredited industry training.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Degree -->
+          <div class="timeline-item left">
+            <div class="timeline-dot glow-cyan"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card glass-panel">
+              <div class="card-tag">Expected Graduation: 2027</div>
+              <h3 class="card-degree">Bachelor of Computer Science</h3>
+              <div class="institution-name">
+                <a href="https://www.du.edu.eg/" target="_blank" rel="noopener noreferrer" class="inst-link">
+                  <i class="fa-solid fa-building-columns"></i> Damietta University, Egypt <i class="fa-solid fa-arrow-up-right-from-square inst-ext"></i>
+                </a>
+              </div>
+              <p class="card-desc">
+                Focus on Advanced Computer Networks, Information Security, Distributed Operating Systems, Algorithms, and Object-Oriented Software Design.
+              </p>
+              <ul class="detail-list">
+                <li><i class="fa-solid fa-check"></i> High academic commitment with applied laboratory engineering in network protocol stacks.</li>
+                <li><i class="fa-solid fa-check"></i> Active lead in collaborative technical defenses and computational workshops.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Academic Transfer -->
+          <div class="timeline-item right">
+            <div class="timeline-dot glow-emerald"><i class="fa-solid fa-route"></i></div>
+            <div class="timeline-card glass-panel">
+              <div class="card-tag">2023 – 2024</div>
+              <h3 class="card-degree">Institutional Academic Transfer</h3>
+              <div class="institution-name">
+                <a href="https://www.fayoum.edu.eg/" target="_blank" rel="noopener noreferrer" class="inst-link">
+                  <i class="fa-solid fa-arrows-split-up-and-left"></i> Transferred from Fayoum University <i class="fa-solid fa-arrow-up-right-from-square inst-ext"></i>
+                </a>
+              </div>
+              <p class="card-desc">
+                Successfully transitioned academic enrollment to Damietta University while expanding practical technical certifications and hands-on laboratory simulations in cybersecurity and network engineering.
+              </p>
+              <ul class="detail-list">
+                <li><i class="fa-solid fa-check"></i> Maintained high academic standing while completing over 250+ hours of external accredited training.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Specialized Training Grid -->
+        <div class="certs-section-block">
+          <h3 class="certs-title"><i class="fa-solid fa-award"></i> Accredited Certifications &amp; Specialized Training (250+ Hours)</h3>
+          <div class="certs-grid">
+            <div class="cert-card glass-panel">
+              <div class="cert-icon-wrap cyan-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="cert-info">
+                <h4>HCIA-Security V4</h4>
+                <span class="cert-org">Huawei Talent Portal</span>
+                <span class="cert-meta"><i class="fa-regular fa-clock"></i> 80 Hours | 2026</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon-wrap emerald-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="cert-info">
+                <h4>FortiSIEM &amp; FortiAnalyzer Practical Training</h4>
+                <span class="cert-org">National Telecommunication Institute (NTI)</span>
+                <span class="cert-meta"><i class="fa-regular fa-clock"></i> 72 Hours | 2026</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon-wrap purple-icon"><i class="fa-brands fa-aws"></i></div>
+              <div class="cert-info">
+                <h4>AWS Security Training</h4>
+                <span class="cert-org">Digital Egypt Pioneers Initiative (DEPI)</span>
+                <span class="cert-meta"><i class="fa-regular fa-clock"></i> 190+ Hours | In Progress</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon-wrap red-icon"><i class="fa-solid fa-lock"></i></div>
+              <div class="cert-info">
+                <h4>Cybersecurity Fundamentals</h4>
+                <span class="cert-org">MaharaTech (ITIDA)</span>
+                <span class="cert-meta"><i class="fa-regular fa-clock"></i> 35 Hours | 2026</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon-wrap cyan-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="cert-info">
+                <h4>CCNA Routing &amp; Switching Preparation</h4>
+                <span class="cert-org">Self-Study &amp; Comprehensive Lab Simulation</span>
+                <span class="cert-meta"><i class="fa-solid fa-circle-check"></i> Completed Full Hands-On Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. EXPERIENCE SECTION ================= -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-people-roof"></i> LEADERSHIP &amp; ROLES</span>
+          <h2 class="section-title"><span class="text-gradient-emerald">Experience</span></h2>
+          <p class="section-desc">Combining hands-on security engineering with proven team leadership and structured project delivery.</p>
+        </div>
+
+        <div class="experience-showcase">
+          <div class="exp-card glass-panel feature-exp">
+
+            <!-- Role Header -->
+            <div class="exp-header">
+              <div class="exp-role-info">
+                <span class="exp-badge">LEADERSHIP EXPERIENCE</span>
+                <h3 class="exp-title">University Technical Team Leader</h3>
+                <h4 class="exp-sub"><i class="fa-solid fa-users"></i> Managing 4–7 Member Cross-Functional Student Teams</h4>
+              </div>
+              <div class="exp-period">
+                <span class="period-pill"><i class="fa-regular fa-calendar-days"></i> Damietta University — Engineering Initiatives</span>
+              </div>
+            </div>
+
+            <!-- Role Summary -->
+            <p class="exp-summary">
+              Directed multi-disciplinary student engineering teams through full project lifecycles — from initial architecture planning and work breakdown to live faculty defenses. Responsible for aligning technical output with academic requirements while maintaining team cohesion and individual accountability across all milestones.
+            </p>
+
+            <!-- 4 Core Competency Pillars -->
+            <div class="exp-grid-details">
+
+              <div class="exp-detail-box">
+                <div class="detail-icon cyan-icon"><i class="fa-solid fa-diagram-precedence"></i></div>
+                <div class="detail-text">
+                  <h4>Task Delegation &amp; Work Breakdown</h4>
+                  <p>Decomposed complex projects into modular parallel tracks — networking configurations, security audits, and data pipelines — assigning tasks based on each member's core strengths to maximize throughput and minimize blockers.</p>
+                </div>
+              </div>
+
+              <div class="exp-detail-box">
+                <div class="detail-icon emerald-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <div class="detail-text">
+                  <h4>Conflict Resolution &amp; Mentorship</h4>
+                  <p>Facilitated resolution of architectural disagreements and technical bottlenecks through structured discussions. Provided direct mentorship to junior members, accelerating their skill development and keeping the team aligned with tight academic deadlines.</p>
+                </div>
+              </div>
+
+              <div class="exp-detail-box">
+                <div class="detail-icon purple-icon"><i class="fa-solid fa-presentation-screen"></i></div>
+                <div class="detail-text">
+                  <h4>Outcome Presentations &amp; Defense</h4>
+                  <p>Led formal oral defenses and live system demonstrations before faculty evaluation committees. Presented architectural decisions, security validation results, and technical trade-offs with clarity and structured confidence.</p>
+                </div>
+              </div>
+
+              <div class="exp-detail-box">
+                <div class="detail-icon red-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="detail-text">
+                  <h4>Technical Documentation &amp; Git Standards</h4>
+                  <p>Authored comprehensive system manuals exceeding 15 pages per project. Enforced clean GitHub branching strategies, standardized commit conventions, and mandatory pull request reviews to ensure code quality and full traceability.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 5. SKILLS SECTION ================= -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-microchip"></i> TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Technical <span class="text-gradient-cyan">Skills</span></h2>
+          <p class="section-desc">Comprehensive technical stack matching enterprise defensive engineering standards.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Network Security & Defense -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cyan-icon"><i class="fa-solid fa-shield-virus"></i></div>
+              <h3>Network Security &amp; Defense</h3>
+            </div>
+            <p class="category-summary">Perimeter protection, cryptographic tunnels, access control, and endpoint hardening.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-solid fa-fire"></i> Firewall Policies</div>
+              <div class="skill-badge"><i class="fa-solid fa-radar"></i> IDS / IPS</div>
+              <div class="skill-badge"><i class="fa-solid fa-list-check"></i> Access Control Lists (ACLs)</div>
+              <div class="skill-badge"><i class="fa-solid fa-user-lock"></i> IAM &amp; AAA</div>
+              <div class="skill-badge"><i class="fa-solid fa-lock"></i> IPsec / SSL VPN</div>
+              <div class="skill-badge"><i class="fa-solid fa-route"></i> NAT / PAT</div>
+              <div class="skill-badge"><i class="fa-solid fa-key"></i> Cryptography (AES-256)</div>
+              <div class="skill-badge"><i class="fa-solid fa-shield"></i> Endpoint Hardening</div>
+            </div>
+          </div>
+
+          <!-- 2. Networking & Protocols -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon emerald-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h3>Networking &amp; Protocols</h3>
+            </div>
+            <p class="category-summary">Deep understanding of enterprise protocol behavior, subnetting, and high availability.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-solid fa-layer-group"></i> TCP/IP Protocol Suite</div>
+              <div class="skill-badge"><i class="fa-solid fa-calculator"></i> IPv4 Subnetting (VLSM/CIDR)</div>
+              <div class="skill-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> Routing (OSPF, Static)</div>
+              <div class="skill-badge"><i class="fa-solid fa-shuffle"></i> Switching (VLANs, STP, Trunking)</div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i> DNS &amp; DHCP</div>
+              <div class="skill-badge"><i class="fa-solid fa-wrench"></i> Network Troubleshooting</div>
+            </div>
+          </div>
+
+          <!-- 3. Security & Analysis Tools -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon purple-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3>Security &amp; Simulation Tools</h3>
+            </div>
+            <p class="category-summary">Hands-on experience with SIEM platforms, packet dissectors, and network emulators.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-solid fa-chart-line"></i> FortiSIEM</div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-pie"></i> FortiAnalyzer</div>
+              <div class="skill-badge"><i class="fa-solid fa-fish-fins"></i> Wireshark (PCAP)</div>
+              <div class="skill-badge"><i class="fa-solid fa-crosshairs"></i> Nmap Port Scanner</div>
+              <div class="skill-badge"><i class="fa-solid fa-circle-nodes"></i> GNS3</div>
+              <div class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Cisco Packet Tracer</div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i> Huawei eNSP</div>
+            </div>
+          </div>
+
+          <!-- 4. Scripting & Automation -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon red-icon"><i class="fa-brands fa-python"></i></div>
+              <h3>Scripting &amp; Automation</h3>
+            </div>
+            <p class="category-summary">High-performance network utilities, multi-threaded scanners, and API integrations.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-brands fa-python"></i> Python (Scapy, Sockets)</div>
+              <div class="skill-badge"><i class="fa-solid fa-arrows-spin"></i> Multi-threading</div>
+              <div class="skill-badge"><i class="fa-solid fa-globe"></i> Requests &amp; REST APIs</div>
+              <div class="skill-badge"><i class="fa-solid fa-code"></i> Nmap API Integration</div>
+              <div class="skill-badge"><i class="fa-solid fa-terminal"></i> Bash Scripting</div>
+              <div class="skill-badge"><i class="fa-solid fa-file-csv"></i> JSON &amp; CSV Reporting</div>
+            </div>
+          </div>
+
+          <!-- 5. Operating Systems & Cloud -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cyan-icon"><i class="fa-brands fa-linux"></i></div>
+              <h3>OS &amp; Cloud Fundamentals</h3>
+            </div>
+            <p class="category-summary">Defensive system administration, Linux environments, and AWS cloud security.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-brands fa-linux"></i> Linux (Kali, Ubuntu)</div>
+              <div class="skill-badge"><i class="fa-brands fa-windows"></i> Windows Server</div>
+              <div class="skill-badge"><i class="fa-brands fa-aws"></i> AWS Cloud Security Fundamentals</div>
+              <div class="skill-badge"><i class="fa-solid fa-database"></i> SQL Database Basics</div>
+              <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+            </div>
+          </div>
+
+          <!-- 6. Languages & Professional Skills -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon emerald-icon"><i class="fa-solid fa-comments"></i></div>
+              <h3>Communication &amp; Languages</h3>
+            </div>
+            <p class="category-summary">Cross-functional team coordination, structured documentation, and bilingual fluency.</p>
+            <div class="skill-badges">
+              <div class="skill-badge"><i class="fa-solid fa-file-lines"></i> Technical Documentation</div>
+              <div class="skill-badge"><i class="fa-solid fa-bug"></i> Structured Incident Reporting</div>
+              <div class="skill-badge"><i class="fa-solid fa-users"></i> Cross-functional Collaboration</div>
+              <div class="skill-badge"><i class="fa-solid fa-globe"></i> Arabic (Native)</div>
+              <div class="skill-badge"><i class="fa-solid fa-language"></i> English (B2 Professional)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. PROJECT SECTION ================= -->
+    <section id="project" class="section project-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-diagram-project"></i> TECHNICAL WORK</span>
+          <h2 class="section-title">Featured <span class="text-gradient-cyan">Projects</span></h2>
+          <p class="section-desc">Practical implementations in enterprise network hardening and Python security automation.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Enterprise Multi-Vendor Network Architecture & Hardening -->
+          <div class="project-card glass-panel" data-project="enterprise-network">
+            <div class="project-banner network-banner">
+              <div class="banner-badge"><i class="fa-solid fa-network-wired"></i> ENTERPRISE HARDENING</div>
+              <div class="banner-status"><span class="pulse-dot emerald"></span> 25+ NODES // 3 BRANCHES</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Enterprise Multi-Vendor Network Architecture &amp; Hardening</h3>
+              <p class="project-desc">
+                Designed and simulated a scalable multi-tier enterprise topology connecting 3 regional branches with 25+ virtual network nodes in GNS3, Cisco Packet Tracer, and Huawei eNSP. Configured multi-area OSPF routing across 6 subnets and 8+ VLANs, achieving sub-second failover with 0% packet loss. Hardened perimeter with 40+ ACLs and 256-bit AES site-to-site IPsec VPN tunnels.
+              </p>
+              <div class="project-tags">
+                <span class="tag">GNS3</span>
+                <span class="tag">Huawei eNSP</span>
+                <span class="tag">Cisco Packet Tracer</span>
+                <span class="tag">OSPF</span>
+                <span class="tag">IPsec VPN</span>
+                <span class="tag">40+ ACLs</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-target="network-modal">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+                <a href="https://github.com/Amr-Eladawy12" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Custom Network Security Automation & Packet Analyzer -->
+          <div class="project-card glass-panel" data-project="packet-analyzer">
+            <div class="project-banner soc-banner">
+              <div class="banner-badge"><i class="fa-brands fa-python"></i> PYTHON AUTOMATION</div>
+              <div class="banner-status"><span class="pulse-dot"></span> 10,000+ FRAMES ANALYZED</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Custom Network Security Automation &amp; Packet Analyzer</h3>
+              <p class="project-desc">
+                Developed a modular, multi-threaded Python scanner capable of auditing 100+ TCP/UDP ports per second, accelerating reconnaissance time by 65%. Built automated packet crafting and inspection scripts using Scapy to analyze 10,000+ live network frames and detect header anomalies. Automated subnet host discovery and banner grabbing with structured JSON/CSV reports.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scapy</span>
+                <span class="tag">Raw Sockets</span>
+                <span class="tag">Multithreading</span>
+                <span class="tag">Nmap API</span>
+                <span class="tag">JSON / CSV</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-target="soc-modal">
+                  <i class="fa-solid fa-eye"></i> View Engine
+                </button>
+                <a href="https://github.com/Amr-Eladawy12" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 7. TESTIMONIALS SECTION ================= -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-comments"></i> ENDORSEMENTS</span>
+          <h2 class="section-title">Testimonials &amp; <span class="text-gradient-emerald">Feedback</span></h2>
+          <p class="section-desc">Endorsements on technical rigor, laboratory performance, and leadership capabilities.</p>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="slider-wrapper" id="testimonialsTrack">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-card glass-panel">
+                <div class="quote-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Amr demonstrated exceptional defensive engineering skills during his 250+ hours of accredited training. His mastery in configuring FortiSIEM, FortiAnalyzer, and multi-tier GNS3 topologies sets him apart as an outstanding junior security professional."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar cyan-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                  <div class="author-meta">
+                    <h4 class="author-name">Security Lab Training Instructor</h4>
+                    <span class="author-role">National Telecommunication Institute (NTI)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="quote-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "As our university team leader, Amr was calm, methodical, and empowering. He delegated tasks according to our individual strengths, resolved complex coding hurdles, and authored flawless documentation that impressed the faculty examination panel."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar emerald-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+                  <div class="author-meta">
+                    <h4 class="author-name">Project Team Member</h4>
+                    <span class="author-role">Faculty of Computer Science, Damietta University</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="quote-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "His custom Scapy packet analyzer and port scanner showed high performance and clean architecture. His ability to connect 3 regional branches with 256-bit IPsec VPN tunnels with zero failover packet loss is top tier."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar purple-avatar"><i class="fa-solid fa-shield-halved"></i></div>
+                  <div class="author-meta">
+                    <h4 class="author-name">Network Security Peer</h4>
+                    <span class="author-role">DEPI AWS Security Initiative Colleague</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-btn next-btn" id="nextTestimonial" aria-label="Next Testimonial">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. SERVICE SECTION ================= -->
+    <section id="service" class="section service-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-shield-halved"></i> CAPABILITIES</span>
+          <h2 class="section-title">Professional <span class="text-gradient-cyan">Services</span></h2>
+          <p class="section-desc">Tailored technical solutions for enterprise network resilience and threat automation.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass-panel">
+            <div class="service-icon-box cyan-icon">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="service-title">Network Security &amp; Perimeter Hardening</h3>
+            <p class="service-desc">
+              Implementation of 40+ Access Control Lists (ACLs), Stateful Firewall inspection rules, 256-bit AES site-to-site IPsec VPN tunnels, and DMZ/Trust zone segmentation.
+            </p>
+            <ul class="service-perks">
+              <li><i class="fa-solid fa-check"></i> Firewall Policy &amp; ACL Auditing</li>
+              <li><i class="fa-solid fa-check"></i> Site-to-Site IPsec / SSL VPN Setup</li>
+              <li><i class="fa-solid fa-check"></i> Zero-Trust Zone Segmentation</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon-box emerald-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="service-title">SOC Log Analysis &amp; SIEM Setup</h3>
+            <p class="service-desc">
+              Configuring FortiSIEM, FortiAnalyzer, and Wireshark filters to ingest telemetry, detect anomalies, analyze raw PCAP frames, and build structured incident reports.
+            </p>
+            <ul class="service-perks">
+              <li><i class="fa-solid fa-check"></i> FortiSIEM &amp; FortiAnalyzer Rules</li>
+              <li><i class="fa-solid fa-check"></i> Wireshark Deep PCAP Forensics</li>
+              <li><i class="fa-solid fa-check"></i> Structured Incident Documentation</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon-box purple-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3 class="service-title">Python Security Automation Scripts</h3>
+            <p class="service-desc">
+              Custom Python utilities utilizing Scapy, raw sockets, and multi-threading for subnet discovery, automated banner grabbing, port auditing (100+ ports/sec), and JSON/CSV reporting.
+            </p>
+            <ul class="service-perks">
+              <li><i class="fa-solid fa-check"></i> Multi-threaded Port &amp; Service Scanners</li>
+              <li><i class="fa-solid fa-check"></i> Scapy Frame Inspection &amp; Crafting</li>
+              <li><i class="fa-solid fa-check"></i> JSON &amp; CSV Audit Report Generators</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon-box red-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <h3 class="service-title">Multi-Vendor Lab Simulation Design</h3>
+            <p class="service-desc">
+              Designing scalable multi-tier enterprise simulation topologies in GNS3, Cisco Packet Tracer, and Huawei eNSP with multi-area OSPF routing and sub-second failover recovery.
+            </p>
+            <ul class="service-perks">
+              <li><i class="fa-solid fa-check"></i> GNS3 &amp; Huawei eNSP Topologies</li>
+              <li><i class="fa-solid fa-check"></i> Multi-Area OSPF &amp; VLAN Trunking</li>
+              <li><i class="fa-solid fa-check"></i> Comprehensive 15+ Page Architecture Docs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 9. GET IN TOUCH SECTION ================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-satellite-dish"></i> INITIATE CONTACT</span>
+          <h2 class="section-title">Get In <span class="text-gradient-cyan">Touch</span></h2>
+          <p class="section-desc">Connect directly with Amr Hatem Eladawy through any of the verified channels below.</p>
+        </div>
+
+        <!-- CV Button above contact channels -->
+        <!-- Clean Centered Direct Contact Channels (No form, No gateway box) -->
+        <div class="contact-channels-container">
+          <div class="contact-channels-grid">
+            <a href="mailto:aeladawy744@gmail.com" class="channel-card glass-panel" title="Send direct email to aeladawy744@gmail.com">
+              <div class="channel-icon cyan-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-meta">
+                <span class="channel-title">Direct Email</span>
+                <span class="channel-val">aeladawy744@gmail.com</span>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <a href="tel:+201013321664" class="channel-card glass-panel" title="Call +201013321664 directly">
+              <div class="channel-icon emerald-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="channel-meta">
+                <span class="channel-title">Direct Phone</span>
+                <span class="channel-val">+20 101 332 1664</span>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <a href="https://wa.me/201013321664" target="_blank" rel="noopener noreferrer" class="channel-card glass-panel" title="Open WhatsApp Chat">
+              <div class="channel-icon emerald-icon"><i class="fa-brands fa-whatsapp text-emerald"></i></div>
+              <div class="channel-meta">
+                <span class="channel-title">WhatsApp Chat</span>
+                <span class="channel-val">@Amr_Eladawy0</span>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <a href="https://github.com/Amr-Eladawy12" target="_blank" rel="noopener noreferrer" class="channel-card glass-panel" title="View GitHub Repositories">
+              <div class="channel-icon red-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-meta">
+                <span class="channel-title">GitHub Profile</span>
+                <span class="channel-val">github.com/aeladawy744</span>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/amr-eladawy/" target="_blank" rel="noopener noreferrer" class="channel-card glass-panel" title="Connect on LinkedIn">
+              <div class="channel-icon purple-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="channel-meta">
+                <span class="channel-title">LinkedIn Profile</span>
+                <span class="channel-val">linkedin.com/in/aeladawy744</span>
+              </div>
+              <div class="channel-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modals -->
+  <div class="modal-backdrop" id="projectModalBackdrop">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modalDynamicContent"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="cyber-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">AMR HATEM ELADAWY</span>
+        <span class="logo-dot">_</span>
+        <span class="logo-bracket">/&gt;</span>
+        <p>Junior Network Security Engineer | SOC Analyst</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#service">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; <span id="currentYear">2026</span> Amr Hatem Eladawy. Engineered for High-Performance Network Defense.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

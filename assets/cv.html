@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amr Hatem Eladawy - Resume / CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #1e293b;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .cv-page {
+      background: #ffffff;
+      width: 100%;
+      max-width: 850px;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .name { font-size: 2.2rem; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
+    .title { font-size: 1.15rem; font-weight: 600; color: #0284c7; margin-bottom: 0.5rem; }
+    .contact-line { font-size: 0.9rem; color: #475569; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+    .contact-line a { color: #0284c7; text-decoration: none; font-weight: 500; }
+    .section-title { font-size: 1.1rem; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 0.3rem; margin: 1.25rem 0 0.75rem 0; }
+    p, li { font-size: 0.92rem; color: #334155; }
+    ul { padding-left: 1.25rem; margin-top: 0.35rem; }
+    li { margin-bottom: 0.35rem; }
+    .job-header { display: flex; justify-content: space-between; font-weight: 700; color: #0f172a; font-size: 0.95rem; }
+    .job-sub { font-size: 0.88rem; color: #0284c7; font-weight: 600; margin-bottom: 0.3rem; }
+    .skill-cat { margin-bottom: 0.4rem; }
+    .skill-cat strong { color: #0f172a; }
+    .actions { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 0.5rem; }
+    .print-btn { background: #0284c7; color: #fff; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-family: inherit; font-size: 0.9rem; }
+    .print-btn:hover { background: #0369a1; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .cv-page { box-shadow: none; padding: 0; max-width: 100%; }
+      .actions { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-page">
+    <div class="header">
+      <h1 class="name">Amr Hatem Eladawy</h1>
+      <div class="title">Junior Network Security Engineer | SOC Analyst</div>
+      <div class="contact-line">
+        <span>Mansoura, Egypt</span>
+        <span>•</span>
+        <a href="tel:+201013321664">+20 101 332 1664</a>
+        <span>•</span>
+        <a href="mailto:aeladawy744@gmail.com">aeladawy744@gmail.com</a>
+        <span>•</span>
+        <a href="https://linkedin.com/in/aeladawy744" target="_blank">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/aeladawy744" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="section-title">Professional Summary</div>
+    <p>Detail-oriented Computer Science student specializing in Network Security, Defensive Engineering, and Infrastructure Hardening. Backed by 250+ hours of accredited technical training across Huawei, NTI, and DEPI. Experienced in simulating multi-vendor enterprise networks (GNS3, Cisco Packet Tracer, Huawei eNSP), implementing robust firewall policies, and building high-performance Python security automation utilities. Strong communicator skilled in technical documentation, structured incident reporting, and cross-functional team collaboration. Seeking to leverage hands-on lab experience and analytical skills as an entry-level Network Security Engineer.</p>
+
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-cat"><strong>• Network Security & Defense:</strong> Firewall Policies, IDS/IPS, Access Control Lists (ACLs), IAM, IPsec/SSL VPN, NAT/PAT, Cryptography, Endpoint Hardening.</div>
+    <div class="skill-cat"><strong>• Networking & Protocols:</strong> TCP/IP Suite, IPv4 Subnetting (VLSM/CIDR), Routing (OSPF, Static), Switching (VLANs, STP, Trunking), DNS, DHCP, Troubleshooting.</div>
+    <div class="skill-cat"><strong>• Security & Analysis Tools:</strong> FortiSIEM, FortiAnalyzer, Wireshark, Nmap, GNS3, Cisco Packet Tracer, Huawei eNSP.</div>
+    <div class="skill-cat"><strong>• Scripting & Automation:</strong> Python (Scapy, Sockets, Requests, Nmap API, Multithreading), Bash Scripting.</div>
+    <div class="skill-cat"><strong>• Operating Systems & Cloud:</strong> Linux (Kali, Ubuntu), Windows Server, AWS Cloud Security Fundamentals, SQL.</div>
+    <div class="skill-cat"><strong>• Communication & Professional Skills:</strong> Technical Documentation, Incident Reporting, Cross-functional Collaboration, Analytical Problem-Solving, Teamwork.</div>
+
+    <div class="section-title">Technical Projects & Practical Experience</div>
+    <div style="margin-bottom: 1rem;">
+      <div class="job-header">
+        <span>Enterprise Multi-Vendor Network Architecture & Hardening</span>
+        <span style="font-weight: 500; font-size: 0.88rem; color: #64748b;">NTI / Self-Trained</span>
+      </div>
+      <div class="job-sub">Tools: GNS3, Cisco Packet Tracer, Huawei eNSP, OSPF, VLANs, IPsec VPN, ACLs</div>
+      <ul>
+        <li>Designed and simulated scalable multi-tier enterprise network topologies connecting 3 regional branches with 25+ virtual network nodes.</li>
+        <li>Configured multi-area OSPF routing across 6 subnets and 8+ VLANs, achieving sub-second failover recovery with 0% packet loss during link failure tests.</li>
+        <li>Hardened network perimeter by implementing 40+ Access Control Lists (ACLs), Stateful Firewall inspection rules, and 256-bit AES site-to-site IPsec VPN tunnels.</li>
+        <li>Authored 15+ pages of technical architecture documentation, IP addressing schemes, and security compliance baselines for team presentation.</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 1rem;">
+      <div class="job-header">
+        <span>Custom Network Security Automation & Packet Analyzer</span>
+        <span style="font-weight: 500; font-size: 0.88rem; color: #64748b;">Personal Project</span>
+      </div>
+      <div class="job-sub">Technologies: Python, Scapy, Sockets, Requests, Nmap API, Multithreading</div>
+      <ul>
+        <li>Developed a modular, multi-threaded Python scanner capable of auditing 100+ TCP/UDP ports per second, accelerating reconnaissance time by 65%.</li>
+        <li>Built automated packet crafting and inspection scripts using Scapy to analyze 10,000+ live network frames and detect header anomalies.</li>
+        <li>Automated subnet host discovery and service banner-grabbing routines, generating structured JSON and CSV security audit reports for reporting.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">Certifications & Specialized Training (250+ Hours)</div>
+    <ul>
+      <li><strong>HCIA-Security V4</strong> — Huawei (80 Hours, 2026)</li>
+      <li><strong>FortiSIEM & FortiAnalyzer Practical Training</strong> — National Telecommunication Institute (NTI) (72 Hours, 2026)</li>
+      <li><strong>AWS Security Training</strong> — Digital Egypt Pioneers Initiative (DEPI) (190+ Hours, In Progress)</li>
+      <li><strong>Cybersecurity Fundamentals</strong> — MaharaTech (35 Hours, 2026)</li>
+      <li><strong>CCNA Routing & Switching Preparation</strong> — Self-Study / Lab Simulation (Completed Comprehensive Hands-On Labs)</li>
+    </ul>
+
+    <div class="section-title">Education</div>
+    <div class="job-header">
+      <span>Bachelor of Computer Science — Damietta University, Egypt</span>
+      <span style="font-weight: 500; font-size: 0.88rem; color: #64748b;">Expected Graduation: 2027</span>
+    </div>
+    <p style="margin-top: 0.2rem; font-size: 0.88rem; color: #64748b;">• Transferred from Fayoum University (2023 – 2024)</p>
+
+    <div class="section-title">Languages</div>
+    <p>• <strong>Arabic:</strong> Native &nbsp;&nbsp;&nbsp;&nbsp; • <strong>English:</strong> Upper-Intermediate / Professional Working Proficiency (B2 - Fluent in Technical Communication)</p>
+  </div>
+
+  <div class="actions">
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</body>
+</html>
